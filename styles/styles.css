@@ -1,0 +1,172 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(../img/pattern-background-desktop.svg);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #E0E8FF;
+}
+
+main {
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    width: 28rem;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px #C9D3F7;
+}
+
+.container > img {
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.bottom-part {
+    text-align: center;
+    margin: 2rem 0 2rem;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-flex > img {
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.d-flex > p {
+    font-weight: 900;
+}
+
+.payment-method {
+    padding: 0 5rem 0 4rem;
+    margin-bottom: 2rem;
+}
+
+.payment-method > p {
+    padding-top: .5rem;
+    font-weight: 900;
+    color: hsl(245, 75%, 52%);
+    text-decoration:underline;
+    margin-bottom: 2rem;
+    font-size: .9rem;
+}
+
+.description {
+    padding: 0 4rem;
+    margin: 1rem 0 3rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+
+
+
+
+/* FONTS */
+
+h1, h6, p, button {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+h1, h6, button {
+    font-weight: 900;
+}
+
+h1 {
+    color: #1A284D;
+    font-size: 1.7rem;
+    margin-top: 1rem;
+}
+
+h6 {
+    color: #27324E;
+    font-size: 1rem;
+
+}
+
+p {
+    color: hsl(224, 23%, 55%);
+}
+
+
+/* BUTTONS */
+
+button {
+    width: 80%;
+    height: 3.2rem;
+    margin: .5rem 0;
+}
+
+.button-1, .button-2 {
+    border:none;
+    font-size: .9rem;
+}
+
+
+.button-1 {
+    background: #382AE1;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px #d1ccec;
+}
+
+.button-2 {
+    background: white;
+    color: hsl(224, 23%, 55%);
+}
+
+/* HOVER STATES */
+
+.button-1:hover, .button-2:hover, .payment-method > p:hover {
+    cursor: pointer;
+}
+
+.button-1:hover {
+    background: #766CF1;
+}
+
+.button-2:hover {
+    color: #1A284D;
+}
+
+.payment-method > p:hover {
+    color: #766CF1;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width:375px) {
+    .container {
+        width: 22rem;
+    }
+
+    .payment-method {
+        padding: 0 3rem 0 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .description {
+        padding: 0 2.5rem;
+    }
+
+    body {
+        background-position:center;
+    }
+}
